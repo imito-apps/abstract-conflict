@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.GameMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/game_activity_card_margin"
+        android:layout_marginHorizontal="@dimen/game_activity_card_margin"
+        android:background="@drawable/rounded_back"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/label_win_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_win_points"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/game_activity_bar_label_padding"
+            android:text="@string/card_name_hidden"
+            android:textColor="@color/points"
+            android:textSize="@dimen/game_activity_bar_text_size"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_label_target"
+            app:drawableTint="@color/points" />
+
+        <TextView
+            android:id="@+id/button_stock_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description_stock_count"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/game_activity_bar_label_padding"
+            android:text="@string/card_name_hidden"
+            android:textColor="?colorPrimary"
+            android:textSize="@dimen/game_activity_bar_text_size"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_label_cards"
+            app:drawableTint="?colorPrimary" />
+
+        <ImageView
+            android:id="@+id/button_abort_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_exit_game"
+            app:srcCompat="@drawable/ic_label_exit"
+            app:tint="?colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/game_activity_card_margin"
+        android:background="@drawable/rounded_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/game_activity_card_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?colorOnPrimary"
+                android:paddingHorizontal="@dimen/game_activity_label_padding_horizontal"
+                android:paddingVertical="@dimen/game_activity_label_padding_vertical"
+                android:text="@string/label_players"
+                android:textColor="?colorPrimary"
+                android:textSize="@dimen/game_activity_text_size"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_player"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/game_activity_card_margin"
+        android:background="@drawable/rounded_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/game_activity_card_padding">
+
+            <TextView
+                android:id="@+id/label_hand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?colorOnPrimary"
+                android:paddingHorizontal="@dimen/game_activity_label_padding_horizontal"
+                android:paddingVertical="@dimen/game_activity_label_padding_vertical"
+                android:text="@string/label_cards_hand"
+                android:textColor="?colorPrimary"
+                android:textSize="@dimen/game_activity_text_size"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_hand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/game_activity_card_margin"
+        android:background="@drawable/rounded_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/game_activity_card_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?colorOnPrimary"
+                android:paddingHorizontal="@dimen/game_activity_label_padding_horizontal"
+                android:paddingVertical="@dimen/game_activity_label_padding_vertical"
+                android:text="@string/label_cards_discarded"
+                android:textColor="?colorPrimary"
+                android:textSize="@dimen/game_activity_text_size"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_discarded"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

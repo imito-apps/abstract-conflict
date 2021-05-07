@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_back"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_player_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxWidth="@dimen/width_player_name"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/invisible"
+            android:enabled="false"
+            android:maxWidth="@dimen/width_player_name"
+            android:text="@string/card_name_hidden" />
+
+        <ImageButton
+            android:id="@+id/button_save_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_name_save"
+            android:src="@drawable/ic_button_save" />
+
+        <ImageButton
+            android:id="@+id/button_edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/description_name_edit"
+            android:src="@drawable/ic_button_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_card_margin"
+        android:background="@drawable/rounded_back">
+
+        <Button
+            android:id="@+id/button_game_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_game_rules" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_card_margin"
+        android:background="@drawable/rounded_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_join_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/invisible"
+            android:padding="4dp"
+            android:text="@string/label_join_game"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_hosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_card_margin"
+        android:background="@drawable/rounded_back">
+
+        <Button
+            android:id="@+id/button_start_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start_server" />
+    </LinearLayout>
+</LinearLayout>

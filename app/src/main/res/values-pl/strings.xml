@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_game_rules">Zasady gry</string>
+    <string name="button_start_game">Rozpocznij grę</string>
+
+    <string name="button_abort_server">Anuluj</string>
+
+    <string name="button_play_card">Zagraj tę kartę</string>
+    <string name="button_play_card_without">Zagraj bez efektu</string>
+    <string name="button_select_player">Wybierz gracza</string>
+    <string name="button_start_server">Rozpocznij nową grę</string>
+
+    <string name="card_name_attack">Atak</string>
+    <string name="card_name_capitalism">Kapitalizm</string>
+    <string name="card_name_defence">Obrona</string>
+    <string name="card_name_domination">Dominacja</string>
+    <string name="card_name_espionage">Szpiegostwo</string>
+    <string name="card_name_exploitation">Eksploatacja</string>
+    <string name="card_name_migration">Migracja</string>
+    <string name="card_name_trade">Handel</string>
+    <string name="card_name_expansion">Ekspansja</string>
+    <string name="card_name_strategy">Strategia</string>
+    <string name="card_name_conspiracy">Spisek</string>
+    <string name="card_name_counterstrike">Kontratak</string>
+
+    <string name="description_image_card">Obraz tej karty</string>
+    <string name="description_name_save">Zapisz imię</string>
+    <string name="description_name_edit">Edytuj imię</string>
+
+    <string name="description_stock_count">Pozostałe w talii karty</string>
+    <string name="description_win_points">Punkty do wygrania gry</string>
+    <string name="description_exit_game">Opuść grę</string>
+
+    <string name="dialog_abort_server">Anulować grę wszystkim graczom?</string>
+
+    <string name="dialog_yes">Tak</string>
+    <string name="dialog_no">Nie</string>
+
+    <string name="guide_main_menu">"Witaj w grze karcianej %s.
+Wprowadź swoje imię i zapoznaj się z zasadami."</string>
+    <string name="guide_game_main_activity_start">"Dotknij jednej z ikon u góry, aby zobaczyć jej znaczenie.
+%s"</string>
+    <string name="guide_game_main_activity_wait_for_turn">"Poczekaj aż pozostali gracze zagrają swoją kartę."</string>
+    <string name="guide_game_main_activity_play_and_wait">"Zagraj jedną ze swoich kart i poczekaj na twój następny ruch."</string>
+
+    <string name="info_enter_name">Wprowadź swoje imię</string>
+    <string name="info_game_aborted">Gracz %s anulował grę</string>
+    <string name="info_player_defended">Ten gracz zagrał kartę Obrona</string>
+
+    <string name="label_cards_discarded">Odrzucone karty</string>
+    <string name="label_cards_hand">Twoje karty</string>
+    <string name="label_players">Gracze</string>
+
+    <string name="label_join_game">Dołącz do gry innego gracza</string>
+    <string name="label_player_name">Twoje imię</string>
+
+    <string name="label_waiting">Oczekiwanie na innych</string>
+
+    <string name="label_cards">Karty</string>
+
+    <string name="label_card_effect">Efekt tej karty</string>
+    <string name="label_card_count">%s - Ilość w talii</string>
+    <string name="label_card_points">%s - Wartość</string>
+
+    <string name="label_select_card">Wybierz kartę</string>
+    <string name="label_select_card_for_you">Wybierz kartę dla siebie</string>
+    <string name="label_select_card_for_bottom">Wybierz kartę na sam spód stosu</string>
+
+    <string name="message_main">Gracz %s zagrał kartę %s</string>
+    <string name="message_player_targeted">i wybrał gracza %s.</string>
+
+    <string name="message_card_targeted">Wybrał kartę o wartości %s (%s).</string>
+    <string name="message_targeted_stays">Wybrany gracz nie posiada tej karty i pozostaje w grze.</string>
+    <string name="message_targeted_leaves">Wybrany gracz posiada tą kartę i odpada.</string>
+
+    <string name="message_draw">Obaj gracze mają karty o tej samej wartości i pozostają w grze.</string>
+    <string name="message_lower_leaves">Gracz %s ma kartę o mniejszej wartości i odpada.</string>
+
+    <string name="message_card_revealed">Gracz %s ma kartę %s.</string>
+
+    <string name="message_domination_stays">Wybrany gracz ma dominację i odpada.</string>
+    <string name="message_domination_leaves">Wybrany gracz nie ma dominacji i pozostaje w grze.</string>
+
+    <string name="message_game_won_by">Gra została wygrana przez</string>
+
+    <string name="message_get_point_by_elimination">Punkt za pozostanie w rundzie zdobywa</string>
+    <string name="message_get_point_by_expansion">Punkt za ekspansję zdobywa</string>
+    <string name="message_get_point_by_points">Punkt za najwyższą wartość karty zdobywa</string>
+
+    <string name="response_too_many_players">Limit graczy na tą grę został osiągnięty</string>
+    <string name="response_version_too_new">Twoja wersja gry jest zbyt nowa. Upewnij się, że wszyscy gracze mają najnowszą.</string>
+    <string name="response_version_too_old">Twoja wersja gry jest zbyt stara. Upewnij się, że wszyscy gracze mają najnowszą.</string>
+
+    <string name="game_description">"Gra składa się z rund, na początku których każdy dostaje jedną kartę.
+W swoim ruchu gracz dostaję drugą kartę, a następnie zagrywa jedną z dwóch które posiada i rozpatruje jej efekt.
+Kiedy talia się wyczerpie lub w grze zostanie tylko jeden gracz, runda kończy się a gracz posiadający kartę o najwyższej wartości zdobywa punkt. Następnie wszystkie karty są tasowane, a gracze którzy odpadli z rundy wracają do gry i ponawia się opisane dotąd kroki.
+Aby wygrać, musisz zdobyć 8 punktów minus liczba graczy."</string>
+
+    <string name="card_description_attack">Wybierz gracza i wartość karty (inną niż 1). Jeśli wybrany gracz ma kartę o tej wartości to odpada z rundy.</string>
+    <string name="card_description_capitalism">Wybierz gracza, z którym chcesz porównać swoją drugą kartę. Gracz z niższą wartością karty odpadnie z rundy.</string>
+    <string name="card_description_defence">Gracz, który zagrał tę kartę, nie może zostać wybrany jako cel karty, aż do swojego następnego ruchu.</string>
+    <string name="card_description_domination">Nie można zagrać tej karty. Gracz, który straci tę kartę w wyniku Migracji, odpada z rundy.</string>
+    <string name="card_description_espionage">Gracz zagrywający tę kartę może zobaczyć kartę dowolnego gracza.</string>
+    <string name="card_description_exploitation">Ta karta musi zostać zagrana jeśli posiada się kartę Handel lub Migracja.</string>
+    <string name="card_description_migration">Wybierz dowolnego gracza. Jego karta zostanie odrzucona, a w zamian otrzyma nową.</string>
+    <string name="card_description_trade">Wybierz gracza i wymień z nim swoją drugą kartę.</string>
+    <string name="card_description_expansion">Gracz, który zagrał tę kartę i nie odpadł z rundy, zdobywa punkt.</string>
+    <string name="card_description_strategy">Do twojej drugiej karty zostaną dodane dwie z talii, a następnie zatrzymasz jedną z nich. Pozostałe karty zostaną umieszczone na spodzie talii.</string>
+
+    <string name="card_description_conspiracy"></string>
+    <string name="card_description_counterstrike"></string>
+</resources>

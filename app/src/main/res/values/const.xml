@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_card_margin">5dp</dimen>
+    <dimen name="default_corner_radius">6dp</dimen>
+
+    <dimen name="width_player_name">250dp</dimen>
+
+    <dimen name="game_activity_bar_label_padding">4dp</dimen>
+    <dimen name="game_activity_bar_text_size">22sp</dimen>
+    <dimen name="game_activity_card_margin">1dp</dimen>
+    <dimen name="game_activity_card_padding">2dp</dimen>
+    <dimen name="game_activity_label_padding_horizontal">5dp</dimen>
+    <dimen name="game_activity_label_padding_vertical">2dp</dimen>
+    <dimen name="game_activity_text_size">16sp</dimen>
+
+    <dimen name="game_rules_dialog_padding">3dp</dimen>
+
+    <dimen name="dialog_separator_label_text_size">18sp</dimen>
+
+    <dimen name="card_dialog_padding">4dp</dimen>
+    <dimen name="card_dialog_text_size">22sp</dimen>
+
+    <dimen name="item_player_text_size">24sp</dimen>
+    <dimen name="item_player_text_padding">4dp</dimen>
+</resources>

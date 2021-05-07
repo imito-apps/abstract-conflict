@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_players"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="clip_horizontal"
+    android:background="?colorOnPrimary"
+    android:paddingTop="1dp">
+
+    <TextView
+        android:id="@+id/text_view_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description_win_points"
+        android:includeFontPadding="false"
+        android:minWidth="26sp"
+        android:paddingHorizontal="@dimen/item_player_text_padding"
+        android:text="@string/card_name_hidden"
+        android:textAlignment="center"
+        android:textColor="@color/points"
+        android:textSize="@dimen/item_player_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/item_player_text_padding"
+        android:text="@string/card_name_hidden"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/item_player_text_size" />
+
+    <TextView
+        android:id="@+id/text_view_eliminated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/item_player_text_padding"
+        android:text="@string/card_name_hidden"
+        android:textAlignment="textEnd"
+        android:textColor="@color/red"
+        android:textSize="@dimen/item_player_text_size" />
+
+    <ImageView
+        android:id="@+id/image_view_defence"
+        android:layout_width="0dp"
+        android:layout_height="28sp"
+        android:layout_weight="7"
+        android:contentDescription="@string/card_name_defence"
+        android:paddingHorizontal="2dp"
+        app:srcCompat="@drawable/ic_card_defence"
+        app:tint="?colorPrimary" />
+</LinearLayout>
