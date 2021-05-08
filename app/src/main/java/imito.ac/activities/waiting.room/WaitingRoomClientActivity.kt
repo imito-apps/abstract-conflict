@@ -3,6 +3,7 @@
 import android.os.*
 import imito.core.views.dialogs.*
 import imito.ac.*
+import imito.ac.notifiers.*
 import imito.ac.servers.*
 
 class WaitingRoomClientActivity : WaitingRoomActivity(R.layout.activity_waiting_room_client) {

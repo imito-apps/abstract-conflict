@@ -1,7 +1,6 @@
 ﻿package imito.ac.notifiers
 
 import androidx.appcompat.app.AppCompatActivity
-import imito.core.views.dialogs.*
 
 class AppNotifier {
     private val messages = mutableListOf<String>()

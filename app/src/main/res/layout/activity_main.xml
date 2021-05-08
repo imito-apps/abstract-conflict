@@ -29,6 +29,7 @@
             android:id="@+id/button_show_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/invisible"
             android:enabled="false"
             android:maxWidth="@dimen/main_activity_player_name_width"

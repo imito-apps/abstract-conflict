@@ -9,12 +9,12 @@ import com.google.android.material.snackbar.*
 import imito.core.*
 import imito.core.errors.*
 import imito.core.views.*
-import imito.core.views.dialogs.*
 import imito.ac.*
 import imito.ac.activities.adapters.user.*
 import imito.ac.activities.dialogs.*
 import imito.ac.activities.waiting.room.*
 import imito.ac.game.*
+import imito.ac.notifiers.*
 import java.util.*
 
 class MainActivity : PortraitActivity(R.layout.activity_main) {
