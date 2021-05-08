@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/image_view"
             android:layout_width="0dp"
-            android:layout_height="100sp"
+            android:layout_height="@dimen/card_dialog_icon_height"
             android:layout_marginStart="1dp"
             android:layout_weight="32"
             android:contentDescription="@string/description_image_card"

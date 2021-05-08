@@ -22,6 +22,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:maxWidth="@dimen/main_activity_player_name_width"
+            android:textSize="@dimen/button_default_text_size"
             android:visibility="gone" />
 
         <Button

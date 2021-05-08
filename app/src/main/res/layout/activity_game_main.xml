@@ -82,7 +82,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_player"
                 android:layout_width="match_parent"
-                android:layout_height="80dp" />
+                android:layout_height="@dimen/game_activity_players_height" />
         </LinearLayout>
     </LinearLayout>
 
