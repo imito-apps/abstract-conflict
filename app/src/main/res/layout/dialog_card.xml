@@ -37,7 +37,7 @@
                 android:includeFontPadding="false"
                 android:text="@string/card_name_hidden"
                 android:textAlignment="center"
-                android:textSize="30sp" />
+                android:textSize="@dimen/card_dialog_name_text_size" />
 
             <TextView
                 android:id="@+id/text_view_points"
@@ -47,7 +47,7 @@
                 android:includeFontPadding="false"
                 android:text="@string/label_card_points"
                 android:textColor="?colorPrimary"
-                android:textSize="@dimen/card_dialog_text_size" />
+                android:textSize="@dimen/card_dialog_default_text_size" />
 
             <TextView
                 android:id="@+id/text_view_count"
@@ -58,7 +58,7 @@
                 android:includeFontPadding="false"
                 android:text="@string/label_card_count"
                 android:textColor="?colorPrimary"
-                android:textSize="@dimen/card_dialog_text_size" />
+                android:textSize="@dimen/card_dialog_default_text_size" />
         </LinearLayout>
     </LinearLayout>
 
@@ -70,7 +70,7 @@
         android:paddingHorizontal="4pt"
         android:text="@string/label_card_effect"
         android:textColor="?colorOnPrimary"
-        android:textSize="@dimen/card_dialog_text_size" />
+        android:textSize="@dimen/card_dialog_default_text_size" />
 
     <TextView
         android:id="@+id/text_view_description"
@@ -81,5 +81,5 @@
         android:includeFontPadding="false"
         android:text="@string/card_name_hidden"
         android:textColor="?colorPrimary"
-        android:textSize="@dimen/card_dialog_text_size" />
+        android:textSize="@dimen/card_dialog_default_text_size" />
 </LinearLayout>

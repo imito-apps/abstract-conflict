@@ -23,7 +23,8 @@
             android:id="@+id/button_start_game"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_start_game" />
+            android:text="@string/button_start_game"
+            android:textSize="@dimen/button_default_text_size" />
     </LinearLayout>
 
     <LinearLayout
@@ -36,6 +37,7 @@
             android:id="@+id/button_abort_server"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_abort_server" />
+            android:text="@string/button_abort_server"
+            android:textSize="@dimen/button_default_text_size" />
     </LinearLayout>
 </LinearLayout>

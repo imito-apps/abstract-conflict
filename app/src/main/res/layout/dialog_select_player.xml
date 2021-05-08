@@ -47,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="@string/button_play_card_without" />
+            android:text="@string/button_play_card_without"
+            android:textSize="@dimen/button_default_text_size" />
     </LinearLayout>
 </LinearLayout>

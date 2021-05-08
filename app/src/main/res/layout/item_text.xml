@@ -16,5 +16,5 @@
         android:text="@string/card_name_hidden"
         android:textAlignment="center"
         android:textColor="?colorPrimary"
-        android:textSize="24sp" />
+        android:textSize="@dimen/item_text_text_size" />
 </FrameLayout>

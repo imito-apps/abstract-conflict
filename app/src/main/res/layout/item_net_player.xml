@@ -16,5 +16,5 @@
         android:text="@string/card_name_hidden"
         android:textAlignment="center"
         android:textColor="?colorPrimary"
-        android:textSize="26sp" />
+        android:textSize="@dimen/item_net_player_text_size" />
 </LinearLayout>

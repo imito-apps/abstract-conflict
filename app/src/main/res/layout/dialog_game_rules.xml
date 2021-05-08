@@ -14,7 +14,7 @@
         android:scrollbars="vertical"
         android:text="@string/game_description"
         android:textColor="?colorPrimary"
-        android:textSize="18sp" />
+        android:textSize="@dimen/game_rules_text_size" />
 
     <LinearLayout
         android:layout_width="match_parent"

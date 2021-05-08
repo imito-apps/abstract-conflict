@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/invisible"
         android:enabled="false"
-        android:text="@string/label_waiting" />
+        android:text="@string/label_waiting"
+        android:textSize="@dimen/button_default_text_size" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_waiting_player"

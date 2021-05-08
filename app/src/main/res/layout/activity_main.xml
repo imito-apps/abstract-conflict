@@ -21,7 +21,7 @@
             android:hint="@string/label_player_name"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
-            android:maxWidth="@dimen/width_player_name"
+            android:maxWidth="@dimen/main_activity_player_name_width"
             android:visibility="gone" />
 
         <Button
@@ -30,8 +30,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/invisible"
             android:enabled="false"
-            android:maxWidth="@dimen/width_player_name"
-            android:text="@string/card_name_hidden" />
+            android:maxWidth="@dimen/main_activity_player_name_width"
+            android:text="@string/card_name_hidden"
+            android:textSize="@dimen/button_default_text_size" />
 
         <ImageButton
             android:id="@+id/button_save_name"
@@ -59,7 +60,8 @@
             android:id="@+id/button_game_rules"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_game_rules" />
+            android:text="@string/button_game_rules"
+            android:textSize="@dimen/button_default_text_size" />
     </LinearLayout>
 
     <LinearLayout
@@ -77,7 +79,7 @@
             android:padding="4dp"
             android:text="@string/label_join_game"
             android:textColor="?attr/colorPrimary"
-            android:textSize="15sp"
+            android:textSize="@dimen/main_activity_join_game_text_size"
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -103,6 +105,7 @@
             android:id="@+id/button_start_game"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_start_server" />
+            android:text="@string/button_start_server"
+            android:textSize="@dimen/button_default_text_size" />
     </LinearLayout>
 </LinearLayout>

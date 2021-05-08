@@ -16,5 +16,5 @@
         android:includeFontPadding="false"
         android:textColor="?colorPrimary"
         android:text="@string/card_name_hidden"
-        android:textSize="24sp" />
+        android:textSize="@dimen/item_card_text_size" />
 </FrameLayout>

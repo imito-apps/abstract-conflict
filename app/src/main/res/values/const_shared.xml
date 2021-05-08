@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_card_margin">5dp</dimen>
+    <dimen name="default_corner_radius">6dp</dimen>
+
+    <dimen name="game_activity_bar_label_padding">4dp</dimen>
+    <dimen name="game_activity_card_margin">1dp</dimen>
+    <dimen name="game_activity_card_padding">2dp</dimen>
+    <dimen name="game_activity_label_padding_horizontal">5dp</dimen>
+    <dimen name="game_activity_label_padding_vertical">2dp</dimen>
+
+    <dimen name="game_rules_dialog_padding">3dp</dimen>
+
+    <dimen name="card_dialog_padding">4dp</dimen>
+
+    <dimen name="item_player_text_padding">4dp</dimen>
+</resources>

@@ -179,26 +179,10 @@ class GameState(
             orderNumber: Int = 1,
         ): GameState {
             val discardPile = mutableListOf<Card>()
-            val stockPile =
-                mutableListOf(
-                    Strategy(true), Strategy(true), Attack(true),
-                    Defence(true), Defence(true),
-                    Defence(true), Migration(true),
-                    Trade(true), Trade(true), Exploitation(true),
 
-                    Capitalism(true), Trade(true),
-                    Attack(true), Trade(true),
-                    Defence(true), Trade(true),
-                    Espionage(true), Trade(true),
-                    Migration(true), Trade(true),
-                    Strategy(true), Trade(true),
-                    Expansion(true), Trade(true),
-                    Trade(true), Trade(true),
-                )
-
-            //val stockPile = CardFactory.getCollection(isBasicDeck).deck
-//                .toMutableList()
-//            stockPile.shuffle()
+            val stockPile = CardFactory.getCollection(isBasicDeck).deck
+                .toMutableList()
+            stockPile.shuffle()
             fun drawCard() = stockPile.removeAt(0)
 
             if (players.size == 2) {
