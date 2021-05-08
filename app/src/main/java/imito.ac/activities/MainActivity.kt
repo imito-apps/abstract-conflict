@@ -175,7 +175,7 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
     private fun setNameWidgets() {
         nameSaveButton = findViewById(R.id.button_save_name)
         nameSaveButton.setOnClickListener {
-            if (BuildConfig.DEBUG) openGameActivity()
+            //if (BuildConfig.DEBUG) openGameActivity()
 
             saveName()
         }
