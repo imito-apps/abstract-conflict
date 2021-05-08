@@ -3,7 +3,6 @@
 import imito.core.*
 import imito.ac.entities.cards.*
 import imito.ac.entities.cards.sets.main.base.*
-import imito.ac.entities.cards.sets.main.basic.*
 import imito.ac.entities.game.notifications.*
 import imito.ac.entities.player.*
 import java.util.*
