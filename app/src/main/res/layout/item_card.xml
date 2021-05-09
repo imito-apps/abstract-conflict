@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_cards"
+    android:layout_width="match_parent"
+    android:paddingTop="1dp"
+    android:background="?colorPrimary"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:textAlignment="center"
+        android:background="?colorOnPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4pt"
+        android:includeFontPadding="false"
+        android:textColor="?colorPrimary"
+        android:text="@string/card_name_hidden"
+        android:textSize="@dimen/item_card_text_size" />
+</FrameLayout>

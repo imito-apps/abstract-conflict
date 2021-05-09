@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_player_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/card_background"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/card_dialog_padding"
+    android:paddingBottom="@dimen/card_dialog_padding">
+
+    <TextView
+        android:id="@+id/button_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/card_name_hidden"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/dialog_separator_label_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_back">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="3dp" />
+    </LinearLayout>
+</LinearLayout>

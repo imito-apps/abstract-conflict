@@ -1,0 +1,3 @@
+﻿Wieloosobowa gra karciana dla 2-6 graczy, w której każdy próbuje przechytrzyć innych.
+Wymaga co najmniej 2 graczy połączonych przez Wi-Fi.
+Nie jest potrzebny dostęp do internetu, tylko LAN (sieć lokalna).

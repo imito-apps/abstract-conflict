@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_net_players"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorPrimary"
+    android:paddingTop="1dp">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorOnPrimary"
+        android:includeFontPadding="false"
+        android:paddingVertical="3dp"
+        android:text="@string/card_name_hidden"
+        android:textAlignment="center"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/item_net_player_text_size" />
+</LinearLayout>

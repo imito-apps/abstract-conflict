@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/card_dialog_icon_height"
+            android:layout_marginStart="1dp"
+            android:layout_weight="32"
+            android:contentDescription="@string/description_image_card"
+            app:srcCompat="@drawable/ic_card_conflict"
+            app:tint="?colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="68"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/card_name_hidden"
+                android:textAlignment="center"
+                android:textSize="@dimen/card_dialog_name_text_size" />
+
+            <TextView
+                android:id="@+id/text_view_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4pt"
+                android:includeFontPadding="false"
+                android:text="@string/label_card_points"
+                android:textColor="?colorPrimary"
+                android:textSize="@dimen/card_dialog_default_text_size" />
+
+            <TextView
+                android:id="@+id/text_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4pt"
+                android:layout_marginBottom="4pt"
+                android:includeFontPadding="false"
+                android:text="@string/label_card_count"
+                android:textColor="?colorPrimary"
+                android:textSize="@dimen/card_dialog_default_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="4pt"
+        android:text="@string/label_card_effect"
+        android:textColor="?colorOnPrimary"
+        android:textSize="@dimen/card_dialog_default_text_size" />
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4pt"
+        android:layout_marginBottom="4pt"
+        android:includeFontPadding="false"
+        android:text="@string/card_name_hidden"
+        android:textColor="?colorPrimary"
+        android:textSize="@dimen/card_dialog_default_text_size" />
+</LinearLayout>
