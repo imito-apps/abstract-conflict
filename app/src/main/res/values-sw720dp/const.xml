@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="info_dialog_text_size">32sp</dimen>
+    <dimen name="info_dialog_text_size">30sp</dimen>
 
     <dimen name="button_default_text_size">28sp</dimen>
 
     <dimen name="main_activity_player_name_width">600dp</dimen>
-    <dimen name="main_activity_join_game_text_size">32sp</dimen>
+    <dimen name="main_activity_join_game_text_size">30sp</dimen>
 
-    <dimen name="game_rules_text_size">36sp</dimen>
+    <dimen name="game_rules_text_size">30sp</dimen>
 
-    <dimen name="main_activity_icon_size">48dp</dimen>
-    <dimen name="game_activity_bar_icon_size">64dp</dimen>
-    <dimen name="game_activity_bar_text_size">44sp</dimen>
-    <dimen name="game_activity_text_size">32sp</dimen>
+    <dimen name="main_activity_icon_size">44dp</dimen>
+    <dimen name="game_activity_bar_icon_size">60dp</dimen>
+    <dimen name="game_activity_bar_text_size">40sp</dimen>
+    <dimen name="game_activity_text_size">28sp</dimen>
     <dimen name="game_activity_players_height">160dp</dimen>
 
-    <dimen name="dialog_separator_label_text_size">36sp</dimen>
+    <dimen name="dialog_separator_label_text_size">30sp</dimen>
 
     <dimen name="card_dialog_icon_height">160dp</dimen>
-    <dimen name="card_dialog_name_text_size">56sp</dimen>
-    <dimen name="card_dialog_default_text_size">44sp</dimen>
+    <dimen name="card_dialog_name_text_size">50sp</dimen>
+    <dimen name="card_dialog_default_text_size">40sp</dimen>
 
-    <dimen name="item_card_text_size">48sp</dimen>
-    <dimen name="item_net_player_text_size">52sp</dimen>
-    <dimen name="item_player_text_size">48sp</dimen>
-    <dimen name="item_text_text_size">48sp</dimen>
+    <dimen name="item_card_text_size">42sp</dimen>
+    <dimen name="item_net_player_text_size">48sp</dimen>
+    <dimen name="item_player_text_size">42sp</dimen>
+    <dimen name="item_text_text_size">42sp</dimen>
 </resources>
