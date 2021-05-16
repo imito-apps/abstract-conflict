@@ -18,11 +18,13 @@ import imito.ac.activities.dialogs.*
 import imito.ac.activities.dialogs.card.*
 import imito.ac.game.*
 import imito.ac.models.*
+import imito.ac.models.cards.*
 import imito.ac.notifiers.*
 
 class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
     companion object {
         const val Name = "GameMainActivity"
+        var openedCard: CardModel? = null
     }
 
     private val game = GameProvider.Instance
@@ -38,6 +40,7 @@ class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
     }
     private val adapterOfHand = CardAdapter {
         openDialog {
+            openedCard = it
             it.playSelf(this, game, ::onDialogClosed)
         }
     }
@@ -60,6 +63,12 @@ class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
 
         game.stateChangedListeners[Name] = ::handleGameState
         if (gameState != null) handleGameState()
+
+        if (openedCard == null) return
+
+        openDialog {
+            openedCard!!.playSelf(this, game, ::onDialogClosed)
+        }
     }
 
     override fun onDestroy() {
@@ -212,6 +221,7 @@ class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
 
     private fun onDialogClosed() {
         hasOpenedDialog = false
+        openedCard = null
     }
 
     private fun updateHandLabelColor() {

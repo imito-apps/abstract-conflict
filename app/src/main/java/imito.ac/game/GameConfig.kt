@@ -16,9 +16,12 @@ class GameConfig(activity: AppCompatActivity) {
     fun saveUserName(name: String): String? {
         if (name.isBlank()) return null
 
+        val minAllowedChar = ' '
+        val filteredName = name.filter { it >= minAllowedChar }
+
         val maxLength = 30
-        val truncatedName = if (name.length <= maxLength) name
-        else name.substring(0, maxLength)
+        val truncatedName = if (filteredName.length <= maxLength) filteredName
+        else filteredName.substring(0, maxLength)
 
         appConfig.setUserName(truncatedName)
         return truncatedName

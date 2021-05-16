@@ -34,7 +34,7 @@ open class AttackModel(
                 onEnd()
             }
             if (game.otherPlayers.canAnyBeTargeted) {
-                TextSelectDialog(activity, resources, R.string.label_select_card, texts, onEnd) { points ->
+                TextSelectDialog(activity, R.string.label_select_card, texts, onEnd) { points ->
                     makeDecision(points)
                 }
             } else {

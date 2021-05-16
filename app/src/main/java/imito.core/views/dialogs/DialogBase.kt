@@ -9,19 +9,21 @@ import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.RecyclerView
 
 abstract class DialogBase(
-    activity: AppCompatActivity,
-    private val layoutId: Int,
+    private val activity: AppCompatActivity? = null,
+    private val layoutId: Int = 0,
     private val onCancel: (() -> Unit)? = null,
 ) : DialogFragment() {
     private var dialog: AlertDialog? = null
     private val alertDialog: AlertDialog get() = dialog!!
 
     init {
-        show(activity.supportFragmentManager, "")
+        if (activity != null) {
+            show(activity.supportFragmentManager, "")
+        }
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val activity = activity ?: throw IllegalStateException("Activity cannot be null")
+        if (activity == null) return getEmptyDialog()
 
         val builder = AlertDialog.Builder(activity)
         val inflater = requireActivity().layoutInflater
@@ -54,4 +56,10 @@ abstract class DialogBase(
     protected fun findRecyclerView(id: Int) = alertDialog.findViewById<RecyclerView>(id)!!
 
     protected fun findTextView(id: Int) = alertDialog.findViewById<TextView>(id)!!
+
+    private fun getEmptyDialog(): Dialog {
+        dismiss()
+        return AlertDialog.Builder(context!!)
+            .show()
+    }
 }
