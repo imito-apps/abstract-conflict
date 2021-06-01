@@ -32,12 +32,14 @@
     <string name="description_exit_game">Opuść grę</string>
 
     <string name="dialog_abort_server">Anulować grę wszystkim graczom?</string>
+    <string name="dialog_confirm_new_game">Istnieje już gra, do której możesz dołączyć. Czy na pewno chcesz stworzyć nową?</string>
 
     <string name="dialog_yes">Tak</string>
     <string name="dialog_no">Nie</string>
 
     <string name="guide_main_menu">"Witaj w grze karcianej %s.
 Wprowadź swoje imię i zapoznaj się z zasadami."</string>
+    <string name="guide_to_rules">"Najpierw zapoznaj się z zasadami gry."</string>
     <string name="guide_game_main_activity_start">"Dotknij jednej z ikon u góry, aby zobaczyć jej znaczenie.
 %s"</string>
     <string name="guide_game_main_activity_wait_for_turn">"Poczekaj aż pozostali gracze zagrają swoją kartę."</string>
@@ -92,8 +94,8 @@ Wprowadź swoje imię i zapoznaj się z zasadami."</string>
     <string name="response_version_too_old">Twoja wersja gry jest zbyt stara. Upewnij się, że wszyscy gracze mają najnowszą.</string>
 
     <string name="game_description">"Gra składa się z rund, na początku których każdy dostaje jedną kartę.
-W swoim ruchu gracz dostaję drugą kartę, a następnie zagrywa jedną z dwóch które posiada i rozpatruje jej efekt.
-Kiedy talia się wyczerpie lub w grze zostanie tylko jeden gracz, runda kończy się a gracz posiadający kartę o najwyższej wartości zdobywa punkt. Następnie wszystkie karty są tasowane, a gracze którzy odpadli z rundy wracają do gry i ponawia się opisane dotąd kroki.
+W każdej rundzie gracze po kolei wykonują swoje ruchy. W swoim ruchu gracz dostaje drugą kartę, a następnie zagrywa jedną z dwóch które posiada i rozpatruje jej efekt.
+Runda kończy się kiedy talia się wyczerpie lub w grze zostanie tylko jeden gracz. Wtedy gracz posiadający kartę o najwyższej wartości zdobywa punkt. Następnie wszystkie karty są tasowane, a gracze którzy odpadli z rundy wracają do gry i ponawia się opisane dotąd kroki.
 Aby wygrać, musisz zdobyć 8 punktów minus liczba graczy."</string>
 
     <string name="card_description_attack">Wybierz gracza i wartość karty (inną niż 1). Jeśli wybrany gracz ma kartę o tej wartości to odpada z rundy.</string>
@@ -101,8 +103,8 @@ Aby wygrać, musisz zdobyć 8 punktów minus liczba graczy."</string>
     <string name="card_description_defence">Gracz, który zagrał tę kartę, nie może zostać wybrany jako cel karty, aż do swojego następnego ruchu.</string>
     <string name="card_description_domination">Nie można zagrać tej karty. Gracz, który straci tę kartę w wyniku Migracji, odpada z rundy.</string>
     <string name="card_description_espionage">Gracz zagrywający tę kartę może zobaczyć kartę dowolnego gracza.</string>
-    <string name="card_description_exploitation">Ta karta musi zostać zagrana jeśli posiada się kartę Handel lub Migracja.</string>
-    <string name="card_description_migration">Wybierz dowolnego gracza. Jego karta zostanie odrzucona, a w zamian otrzyma nową.</string>
+    <string name="card_description_exploitation">Ta karta nie ma efektu. Musi zostać zagrana jeśli posiasz kartę Handel lub Migracja.</string>
+    <string name="card_description_migration">Wybierz gracza (możesz wybrać siebie). Jego karta zostanie odrzucona, a w zamian otrzyma nową.</string>
     <string name="card_description_trade">Wybierz gracza i wymień z nim swoją drugą kartę.</string>
     <string name="card_description_expansion">Gracz, który zagrał tę kartę i nie odpadł z rundy, zdobywa punkt.</string>
     <string name="card_description_strategy">Do twojej drugiej karty zostaną dodane dwie z talii, a następnie zatrzymasz jedną z nich. Pozostałe karty zostaną umieszczone na spodzie talii.</string>

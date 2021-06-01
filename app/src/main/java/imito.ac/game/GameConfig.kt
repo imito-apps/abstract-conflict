@@ -34,6 +34,7 @@ class GameConfig(activity: AppCompatActivity) {
     class Keys {
         companion object {
             const val GuideMainMenu = "GuideMainMenu"
+            const val GuideToRules = "GuideToRules"
             const val GuideGameMain = "GuideGameMain"
         }
     }

@@ -73,6 +73,14 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
         OkDialog.show(this, message)
     }
 
+    private fun ensureRulesAreKnown(): Boolean {
+        if (game.getValueOrFalseAndSetTrue(GameConfig.Keys.GuideToRules)) return true
+
+        val message = resources.getString(R.string.guide_to_rules)
+        OkDialog.show(this, message)
+        return false
+    }
+
     private fun tryJoinTheOnlyHost() {
         val hosts = game.discoveredHosts
         if (hosts.size != 1) return
@@ -82,7 +90,7 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
     }
 
     private fun joinHost(hostId: UUID) {
-        if (!saveName()) return
+        if (!saveName() || !ensureRulesAreKnown()) return
 
         val intent = Intent(this, WaitingRoomClientActivity::class.java)
         game.setDiscoveredHost(hostId)
@@ -122,8 +130,18 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
     }
 
     private fun startGame() {
-        if (!saveName()) return
+        if (!saveName() || !ensureRulesAreKnown()) return
 
+        if (game.discoveredHosts.isEmpty())
+            startWaitingRoomHostActivity()
+        else {
+            YesNoDialog.show(this, R.string.dialog_confirm_new_game, {
+                startWaitingRoomHostActivity()
+            })
+        }
+    }
+
+    private fun startWaitingRoomHostActivity() {
         val intent = Intent(this, WaitingRoomHostActivity::class.java)
         startActivity(intent)
     }
