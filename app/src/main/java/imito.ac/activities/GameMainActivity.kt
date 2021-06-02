@@ -99,7 +99,7 @@ class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
 
     private fun addToastTo(textView: TextView, resourceId: Int) {
         textView.setOnClickListener {
-            SimpleToast.show(this, resourceId)
+            SimpleToast.show(textView, resourceId)
         }
     }
 

@@ -30,6 +30,7 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
 
     override fun createSelf(savedInstanceState: Bundle?) {
         game = Game(this,
+            findViewById(R.id.layout_main),
             {
                 runOnUiThread { playerAdapter.add(it) }
             }, {
@@ -156,8 +157,7 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
             return true
         }
         val view = findViewById<LinearLayout>(R.id.layout_main)
-        Snackbar.make(view, R.string.info_enter_name, 5000)
-            .show()
+        SimpleToast.show(view, R.string.info_enter_name)
         enableNameEdit()
         return false
     }
