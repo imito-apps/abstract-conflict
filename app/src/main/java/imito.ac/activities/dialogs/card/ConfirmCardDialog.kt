@@ -6,20 +6,22 @@ import imito.ac.*
 import imito.ac.activities.*
 import imito.ac.game.*
 import imito.ac.models.cards.*
+import imito.core.*
 
 class ConfirmCardDialog(
-    activity: AppCompatActivity,
-    card: CardModel,
-    onCancel: () -> Unit,
-    private val game: Game,
-    private val onConfirm: () -> Unit,
+    activity: AppCompatActivity? = null,
+    card: CardModel? = null,
+    onCancel: () -> Unit = Const.EmptyAction,
+    private val game: Game? = null,
+    private val onConfirm: () -> Unit = Const.EmptyAction,
     private val hideConfirmButton: Boolean = false,
 ) : CardDialog(activity, card, onCancel, R.layout.dialog_card_confirm) {
-    private val cardActivator = CardActivator(card, game)
+    private var cardActivator: CardActivator? = null
 
     override fun changeSelf() {
         super.changeSelf()
 
+        cardActivator = CardActivator(card!!, game!!)
         val confirmButton = findButton(R.id.button_confirm)
         if (hideConfirmButton) {
             confirmButton.visibility = View.GONE
@@ -30,13 +32,13 @@ class ConfirmCardDialog(
             onConfirm()
         }
         confirmButton.isEnabled = game.isPlayerTheCurrentOne
-        cardActivator.watchState(activity!!) {
+        cardActivator!!.watchState(activity!!) {
             confirmButton.isEnabled = true
         }
     }
 
     override fun onDestroy() {
-        cardActivator.onDestroy()
+        cardActivator?.onDestroy()
         super.onDestroy()
     }
 }

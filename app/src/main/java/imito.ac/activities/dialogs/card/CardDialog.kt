@@ -8,14 +8,14 @@ import imito.ac.*
 import imito.ac.models.cards.*
 
 open class CardDialog(
-    activity: AppCompatActivity,
-    val card: CardModel,
+    activity: AppCompatActivity? = null,
+    val card: CardModel? = null,
     onCancel: () -> Unit = Const.EmptyAction,
     layoutId: Int = R.layout.dialog_card,
 ) : DialogBase(activity, layoutId, onCancel) {
     override fun changeSelf() {
         val imageView = findImageView(R.id.image_view)
-        imageView.setImageResource(card.imageId)
+        imageView.setImageResource(card!!.imageId)
 
         val titleText = findTextView(R.id.text_view_title)
         titleText.text = card.name

@@ -1,5 +1,6 @@
 ﻿package imito.ac.game
 
+import android.view.*
 import androidx.appcompat.app.*
 import imito.core.entities.*
 import imito.core.nsd.*
@@ -15,6 +16,7 @@ import java.util.*
 
 class Game(
     val activity: AppCompatActivity,
+    val view: View,
     val onHostFound: (UserBase) -> Unit,
     val onHostLost: (UUID) -> Unit,
 ) {
@@ -36,6 +38,7 @@ class Game(
             discoveredHosts[it.id] = it
             onHostFound(it.toUser())
         }, {
+            discoveredHosts.remove(it)
             onHostLost(it)
         })
     private var setDiscoveredHost: DiscoveredService? = null
@@ -72,7 +75,10 @@ class Game(
         onResponse: (GameParticipant.Response.Join) -> Unit,
     ) {
         this.changeOthers = changeOthers
-        this.start = onStart
+        this.start = {
+            discoveredHosts.remove(setDiscoveredHost!!.id)
+            onStart()
+        }
         gameClient.joinHost(setDiscoveredHost!!, player, onResponse)
     }
 
@@ -104,7 +110,7 @@ class Game(
             .getString(R.string.info_game_aborted)
         val message = String.format(format, playerName)
         activity.runOnUiThread {
-            SimpleToast.show(activity, message)
+            SimpleToast.show(activity, view, message)
         }
     }
 

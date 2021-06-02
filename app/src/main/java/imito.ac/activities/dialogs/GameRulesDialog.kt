@@ -11,7 +11,7 @@ import imito.ac.activities.dialogs.card.*
 import imito.ac.models.cards.*
 
 class GameRulesDialog(
-    activity: AppCompatActivity,
+    activity: AppCompatActivity? = null,
 ) : DialogBase(activity, R.layout.dialog_game_rules, Const.EmptyAction) {
     private val cardAdapter = CardAdapter {
         CardDialog(activity, it)

@@ -52,7 +52,7 @@ class PlayerAdapter(
 
         init {
             imageViewDefence.setOnClickListener {
-                SimpleToast.show(view.context, R.string.info_player_defended)
+                SimpleToast.show(view, R.string.info_player_defended)
             }
         }
     }

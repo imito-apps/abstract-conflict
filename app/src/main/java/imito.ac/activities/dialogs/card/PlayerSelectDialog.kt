@@ -14,42 +14,42 @@ import imito.ac.models.cards.*
 import java.util.*
 
 class PlayerSelectDialog(
-    activity: AppCompatActivity,
-    card: CardModel,
-    onCancel: () -> Unit,
-    private val game: Game,
-    private val players: PlayerModels,
-    private val onSelect: (UUID) -> Unit,
+    activity: AppCompatActivity? = null,
+    card: CardModel? = null,
+    onCancel: () -> Unit = Const.EmptyAction,
+    private val game: Game? = null,
+    private val players: PlayerModels? = null,
+    private val onSelect: (UUID) -> Unit = {},
 ) : CardDialog(activity, card, onCancel, R.layout.dialog_select_player) {
-    private val cardActivator = CardActivator(card, game)
+    private lateinit var cardActivator: CardActivator
 
-    private val adapter = PlayerAdapter {
-        if (it.canBeTargeted) {
-            dismiss()
-            onSelect(it.id)
-        } else
-            SimpleToast.show(activity, R.string.info_player_defended)
-    }
-
-    init {
-        adapter.replaceAll(players)
-    }
+    private lateinit var adapter: PlayerAdapter
 
     override fun changeSelf() {
         super.changeSelf()
 
         val recyclerView = findRecyclerView(R.id.recycler_player)
         recyclerView.layoutManager = LinearLayoutManager(context)
+
+        adapter = PlayerAdapter {
+            if (it.canBeTargeted) {
+                dismiss()
+                onSelect(it.id)
+            } else
+                SimpleToast.show(recyclerView, R.string.info_player_defended)
+        }
         recyclerView.adapter = adapter
+        if (players != null) adapter.replaceAll(players)
 
         val groupLayout = findLinearLayout(R.id.layout_group)
-        if (!game.isPlayerTheCurrentOne) groupLayout.visibility = View.INVISIBLE
+        if (!game!!.isPlayerTheCurrentOne) groupLayout.visibility = View.INVISIBLE
 
+        cardActivator = CardActivator(card!!, game)
         cardActivator.watchState(activity!!) {
             groupLayout.visibility = View.VISIBLE
         }
         val doNoEffectButton = findButton(R.id.button_do_no_effect)
-        if (players.canAnyBeTargeted) {
+        if (players!!.canAnyBeTargeted) {
             doNoEffectButton.visibility = View.GONE
             return
         }

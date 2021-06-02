@@ -32,16 +32,19 @@
     <string name="description_exit_game">Exit game</string>
 
     <string name="dialog_abort_server">Cancel the game for all players?</string>
+    <string name="dialog_confirm_new_game">There is already a game that you can join. Are you sure you want to create a new one?</string>
 
     <string name="dialog_yes">Yes</string>
     <string name="dialog_no">No</string>
 
     <string name="guide_main_menu">"Welcome to the %s card game.
 Enter your name and read the rules."</string>
+    <string name="guide_to_rules">"First, read the game rules."</string>
     <string name="guide_game_main_activity_start">"Tap one of icons on the top to see its meaning.
 %s"</string>
     <string name="guide_game_main_activity_wait_for_turn">"Wait for the other players to play their card."</string>
     <string name="guide_game_main_activity_play_and_wait">"Play one of your cards and wait for your next turn."</string>
+    <string name="game_main_activity_two_players_discard">"At the beginning of each round, 3 cards are discarded as there are only 2 players in the game."</string>
 
     <string name="info_enter_name">Enter your name</string>
     <string name="info_game_aborted">%s aborted the game</string>
@@ -93,18 +96,19 @@ Enter your name and read the rules."</string>
     <string name="response_version_too_new">Your version of the game is too new. Make sure that all players have the latest one.</string>
     <string name="response_version_too_old">Your version of the game is too old. Make sure that all players have the latest one.</string>
 
-    <string name="game_description">"The game consists of rounds at the beginning of which everyone is dealt one card.
-On her/his turn, a player is dealt a second card, then plays one of the two she/he has and resolves its effect.
-When the deck runs out or there is only one player left in play, the round ends and the player with the highest-valued card scores a point. Then all cards are shuffled, and the players who are knocked out return to the game and the steps described so far are repeated.
-To win the game, you need to score 8 points minus the number of players."</string>
+    <string name="game_description">"The game consists of rounds. At the beginning of a round one card is discarded face down. Then everyone gets one card.
+A round consist of turns. On her/his turn, a player is dealt a second card, then plays one of the two she/he has and resolves its effect.
+The round ends when the deck runs out or there is only one player left in play. When this happens, the player with the highest-valued card scores a point. Then all cards are shuffled, and the players who are knocked out return to the game. Then the steps described so far are repeated.
+To win the game, you need to score 8 points minus the number of players.
+Select a card to view its description."</string>
 
     <string name="card_description_attack">Choose a player and a card value (other than 1). If chosen player has card with that value, she/he is knocked out of the round.</string>
     <string name="card_description_capitalism">Choose a player to compare your second card with. The player with the lower card value will be knocked out of the round.</string>
     <string name="card_description_defence">The player who played this card cannot be chosen as the target of a card until her/his next turn.</string>
     <string name="card_description_domination">This card cannot be played. The player who loses this card due to the Migration is knocked out of the round.</string>
     <string name="card_description_espionage">The player who played this card can see card of any player.</string>
-    <string name="card_description_exploitation">You must play this card if you have the Trade or the Migration card.</string>
-    <string name="card_description_migration">Choose any player. That player\'s card will be discarded. That player will get a new one in return.</string>
+    <string name="card_description_exploitation">This card has no effect. You must play this card if you have the Trade or the Migration card.</string>
+    <string name="card_description_migration">Choose a player (you can choose yourself). That player\'s card will be discarded. That player will get a new one in return.</string>
     <string name="card_description_trade">Choose a player to trade your second card with.</string>
     <string name="card_description_expansion">The player who played this card and is not knocked of the round scores a point.</string>
     <string name="card_description_strategy">Two cards from the deck will be added to your second card, and then you keep one of them. The remaining cards will be placed at the bottom of the deck.</string>
