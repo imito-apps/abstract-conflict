@@ -121,6 +121,15 @@ class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
         OkDialog.show(this, message)
     }
 
+    private fun ensureTwoPlayersInfo() {
+        if (game.players.size > 2
+            || game.getValueOrFalseAndSetTrue(GameConfig.Keys.TwoPlayersDiscard)
+        ) return
+
+        val message = resources.getString(R.string.game_main_activity_two_players_discard)
+        OkDialog.show(this, message)
+    }
+
     private fun setLists() {
         handLabel = findViewById(R.id.label_hand)
 
@@ -150,6 +159,7 @@ class GameMainActivity : PortraitActivity(R.layout.activity_game_main) {
 
     private fun handle(gameState: GameStateModel) {
         ensureStartInfo()
+        ensureTwoPlayersInfo()
         updateStatusBar(gameState)
         updateLists(gameState)
         updateHandLabelColor()

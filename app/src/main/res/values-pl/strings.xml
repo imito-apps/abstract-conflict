@@ -44,6 +44,7 @@ Wprowadź swoje imię i zapoznaj się z zasadami."</string>
 %s"</string>
     <string name="guide_game_main_activity_wait_for_turn">"Poczekaj aż pozostali gracze zagrają swoją kartę."</string>
     <string name="guide_game_main_activity_play_and_wait">"Zagraj jedną ze swoich kart i poczekaj na twój następny ruch."</string>
+    <string name="game_main_activity_two_players_discard">"Na początku każdej rundy są odrzucane 3 karty, ponieważ w grze bierze udział tylko 2 graczy."</string>
 
     <string name="info_enter_name">Wprowadź swoje imię</string>
     <string name="info_game_aborted">Gracz %s anulował grę</string>
@@ -93,10 +94,11 @@ Wprowadź swoje imię i zapoznaj się z zasadami."</string>
     <string name="response_version_too_new">Twoja wersja gry jest zbyt nowa. Upewnij się, że wszyscy gracze mają najnowszą.</string>
     <string name="response_version_too_old">Twoja wersja gry jest zbyt stara. Upewnij się, że wszyscy gracze mają najnowszą.</string>
 
-    <string name="game_description">"Gra składa się z rund, na początku których każdy dostaje jedną kartę.
+    <string name="game_description">"Gra składa się z rund. Na początku rundy jedna karta jest odrzucana awersem do dołu. Następnie każdy otrzymuje jedną kartę.
 W każdej rundzie gracze po kolei wykonują swoje ruchy. W swoim ruchu gracz dostaje drugą kartę, a następnie zagrywa jedną z dwóch które posiada i rozpatruje jej efekt.
 Runda kończy się kiedy talia się wyczerpie lub w grze zostanie tylko jeden gracz. Wtedy gracz posiadający kartę o najwyższej wartości zdobywa punkt. Następnie wszystkie karty są tasowane, a gracze którzy odpadli z rundy wracają do gry i ponawia się opisane dotąd kroki.
-Aby wygrać, musisz zdobyć 8 punktów minus liczba graczy."</string>
+Aby wygrać, musisz zdobyć 8 punktów minus liczba graczy.
+Wybierz kartę aby zobaczyć jej opis."</string>
 
     <string name="card_description_attack">Wybierz gracza i wartość karty (inną niż 1). Jeśli wybrany gracz ma kartę o tej wartości to odpada z rundy.</string>
     <string name="card_description_capitalism">Wybierz gracza, z którym chcesz porównać swoją drugą kartę. Gracz z niższą wartością karty odpadnie z rundy.</string>

@@ -36,6 +36,7 @@ class GameConfig(activity: AppCompatActivity) {
             const val GuideMainMenu = "GuideMainMenu"
             const val GuideToRules = "GuideToRules"
             const val GuideGameMain = "GuideGameMain"
+            const val TwoPlayersDiscard = "TwoPlayersDiscard"
         }
     }
 }
