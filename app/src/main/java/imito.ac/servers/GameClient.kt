@@ -23,7 +23,7 @@ class GameClient(
 
     init {
         thread {
-            server.start(onStarted, { text, wrongAddressToDo ->
+            server.start(onStarted) { text, wrongAddressToDo ->
                 val payload = text.substring(1)
                 when (text[0]) {
                     Message.Others -> {
@@ -48,7 +48,7 @@ class GameClient(
                         }, "GameClient.ResponseToJoin")
                     }
                 }
-            })
+            }
         }
     }
 

@@ -8,6 +8,7 @@ class AppConst {
             1,//1
             1,//2
             1,//3
+            1,//4
         )
         const val VersionCode = BuildConfig.VERSION_CODE
         val FirstCompatibleVersion = FirstCompatibleVerForVer[VersionCode]

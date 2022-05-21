@@ -5,7 +5,6 @@ import android.os.*
 import android.view.*
 import android.widget.*
 import androidx.recyclerview.widget.*
-import com.google.android.material.snackbar.*
 import imito.core.*
 import imito.core.errors.*
 import imito.core.views.*
@@ -75,11 +74,15 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
     }
 
     private fun ensureRulesAreKnown(): Boolean {
-        if (game.getValueOrFalseAndSetTrue(GameConfig.Keys.GuideToRules)) return true
+        if (markRulesAsKnown()) return true
 
         val message = resources.getString(R.string.guide_to_rules)
         OkDialog.show(this, message)
         return false
+    }
+
+    private fun markRulesAsKnown(): Boolean {
+        return game.getValueOrFalseAndSetTrue(GameConfig.Keys.GuideToRules)
     }
 
     private fun tryJoinTheOnlyHost() {
@@ -108,6 +111,7 @@ class MainActivity : PortraitActivity(R.layout.activity_main) {
     private fun setGameRules() {
         findViewById<Button>(R.id.button_game_rules)
             .setOnClickListener {
+                markRulesAsKnown()
                 GameRulesDialog(this)
             }
     }
